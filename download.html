@@ -3,7 +3,7 @@
     <head> 
         <meta charset="utf-8"> 
         <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
-        <title>Cityscapes-Download</title>         
+        <title>Semantic-Segmentation-Download</title>         
         <meta content="" name="description"> 
         <meta content="" name="keywords"> 
         <!-- Favicons -->         
@@ -33,7 +33,7 @@
         <header id="header" class="fixed-top d-flex align-items-center "> 
             <div class="container d-flex justify-content-between align-items-center"> 
                 <div class="logo"> 
-                    <h1 class="text-light"><a href="index.html"><span>Cityscapes</span></a></h1> 
+                    <h1 class="text-light"><a href="index.html"><span>Semantic-Segmentation</span></a></h1> 
                     <!-- Uncomment below if you prefer to use an image logo -->                     
                     <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->                     
                 </div>                 
@@ -74,7 +74,7 @@
                             <a href="benchmark.html"><span>Benchmark</span> <i class="bi bi-chevron-down"></i></a> 
                             <ul> 
                                 <li>
-                                    <a href="benchmark.html#benchmark">Cityscapes Benchmark</a>
+                                    <a href="benchmark.html#benchmark">Semantic-Segmentation Benchmark</a>
                                 </li>                                 
                             </ul>                             
                         </li>                                                    
@@ -94,62 +94,85 @@
                     <div class="row aos-init aos-animate" data-aos="fade-up"></div>              
                     <span class="anchor" id="instructions"></span>
                     <h3><b>Instructions</b></h3>
-                    <p>The instructions for downloading Cityscapes is listed as follows:</p>
+                    <p>The instructions for downloading Semantic-Segmentation is listed as follows:</p>
                     <ol>
-                      <li>Download the Cityscapes dataset files using the link provided below and then decompress.</li>
+                      <li>Download the Semantic-Segmentation dataset files using the link provided below and then decompress.</li>
                     </ol>
                     <p> After decompression, the data organization is listed as follows: </p>
                     <pre style="text-align: left; white-space: pre; display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);">
 <code><b>"Cityscapes":</b> {
-    ├─Cityscapes Dataset
-    ├─disparity
-    │  ├─test
-    │  │  ├─berlin
-    │  │  ├─bielefeld
-    │  │  ├─bonn
-    │  │  ├─...
-    │  │  └─munich
-    │  ├─train
-    │  │  ├─01_Hanns_Klemm_Str_45
-    │  │  ├─03_Hanns_Klemm_Str_19
-    │  │  ├─...
-    │  │  └─zurich
-    │  └─val
-    │      ├─02_Hanns_Klemm_Str_44
-    │      ├─04_Maurener_Weg_8
-    │      ├─05_Schafgasse_1
-    │      ├─...
-    │      └─munster
-    ├─gtFine
-    │  ├─train
-    │  │  ├─01_Hanns_Klemm_Str_45
-    │  │  ├─03_Hanns_Klemm_Str_19
-    │  │  ├─...
-    │  │  └─zurich
-    │  └─val
-    │      ├─02_Hanns_Klemm_Str_44
-    │      ├─04_Maurener_Weg_8
-    │      ├─05_Schafgasse_1
-    │      ├─...
-    │      └─munster
-    └─leftImg8bit
-        ├─test
-        │  ├─berlin
-        │  ├─bielefeld
-        │  ├─bonn
-        │  ├─...
-        │  └─munich
-        ├─train
-        │  ├─01_Hanns_Klemm_Str_45
-        │  ├─03_Hanns_Klemm_Str_19
-        │  ├─...
-        │  └─zurich
-        └─val
-            ├─02_Hanns_Klemm_Str_44
-            ├─04_Maurener_Weg_8
-            ├─05_Schafgasse_1
-            ├─...
-            └─munster
+semantic_segmentation_dataset
+├── test
+│   ├── depth
+│   │   ├── cityscapes_real
+│   │   │   ├── frankfurt [267 pic]
+│   │   │   ├── lindau [59 pic]
+│   │   │   └── munster [174 pic]
+│   │   └── synthia_sim [830 pic]
+│   ├── gtFine
+│   │   ├── cityscapes_real
+│   │   │   ├── frankfurt [1335 pic]
+│   │   │   ├── lindau [295 pic]
+│   │   │   └── munster [870 pic]
+│   │   └── synthia_sim [830 pic]
+│   └── leftImg8bit
+│       ├── cityscapes_real
+│       │   ├── frankfurt [267 pic]
+│       │   ├── lindau [59 pic]
+│       │   └── munster [174 pic]
+│       └── synthia_sim [830 pic]
+├── test.txt
+├── train
+│   ├── depth
+│   │   ├── cityscapes_real
+│   │   │   ├── aachen [174 pic]
+│   │   │   ├── berlin [544 pic]
+│   │   │   ├── bochum [96 pic]
+│   │   │   ├── ...
+│   │   │   └── zurich [122 pic]
+│   │   └── synthia_sim [5813 pic]
+│   ├── gtFine
+│   │   ├── cityscapes_real
+│   │   │   ├── aachen [870 pic]
+│   │   │   ├── berlin [2720 pic]
+│   │   │   ├── bochum [480 pic]
+│   │   │   ├── ...
+│   │   │   └── zurich [610 pic]
+│   │   └── synthia_sim [5813 pic]
+│   └── leftImg8bit
+│       ├── cityscapes_real
+│       │   ├── aachen [174 pic]
+│       │   ├── berlin [544 pic]
+│       │   ├── bochum [96 pic]
+│       │   ├── ...
+│       │   └── zurich [122 pic]
+│       └── synthia_sim [5813 pic]
+├── train.txt
+└── val
+    ├── depth
+    │   ├── cityscapes_real
+    │   │   ├── bielefeld [181 pic]
+    │   │   ├── bonn [46 pic]
+    │   │   ├── leverkusen [58 pic]
+    │   │   ├── mainz [298 pic]
+    │   │   └── munich [398 pic]
+    │   └── synthia_sim [1663 pic]
+    ├── gtFine
+    │   ├── cityscapes_real
+    │   │   ├── bielefeld [905 pic]
+    │   │   ├── bonn [230 pic]
+    │   │   ├── leverkusen [290 pic]
+    │   │   ├── mainz [1490 pic]
+    │   │   └── munich [1990 pic]
+    │   └── synthia_sim [1663 pic]
+    └── leftImg8bit
+        ├── cityscapes_real
+        │   ├── bielefeld [181 pic]
+        │   ├── bonn [46 pic]
+        │   ├── leverkusen [58 pic]
+        │   ├── mainz [298 pic]
+        │   └── munich [398 pic]
+        └── synthia_sim [1663 pic]
 }
 </code></pre>
                     <div class="row aos-init aos-animate" data-aos="fade-up">
@@ -160,8 +183,7 @@
                     <span class="anchor" id="link"></span>
                     <h3><b>Download Links</b></h3>
                     <p> 
-                        Download link:  <a href="https://kubeedge.obs.cn-north-1.myhuaweicloud.com/examples/robo_dog_delivery/cityscapes.zip" target="_blank">cityscapes</a></br>
-                        paper link:  <a href="https://www.cityscapes-dataset.com/wordpress/wp-content/papercite-data/pdf/cordts2016cityscapes.pdf" target="_blank">The Cityscapes Dataset for Semantic Urban Scene Understanding</a>
+                        Download link:  <a href="https://kubeedge.obs.cn-north-1.myhuaweicloud.com/sedna-robo/semantic_segmentation_dataset.zip" target="_blank">Semantic-Segmentation</a></br>
                     </p>
 
                     <div class="row aos-init aos-animate" data-aos="fade-up">
@@ -182,7 +204,7 @@
             <div class="container"> 
                 <div class="copyright"> 
                     &copy; Copyright 
-                    <strong><span>hsj576</span></strong>. All Rights Reserved
+                    <strong><span>HUAWEI</span></strong>. All Rights Reserved
                 </div>                 
                 <div class="credits"> 
                     <!-- All the links in the footer should remain intact. -->                     
