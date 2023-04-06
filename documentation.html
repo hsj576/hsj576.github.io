@@ -93,7 +93,7 @@
                 <div class="container">
                     <span class="anchor" id="dataset_partition_description"></span>
                     <h3><b>Dataset Partition Description</b></h3>
-                    <p> Cityscapes dataset has 8 groups of 30 classes. The partition of dataset is as follow: 
+                    <p> Semanti-segmentation dataset has 8 groups of 30 classes. The partition of dataset is as follow: 
                     </p>
                     
                     <table>
@@ -148,19 +148,11 @@
          </p>
          <p> 
              <span>Complexity</span>
-             <li>30 classes</li>
-             <li>See Class Definitions for a list of all classes and have a look at the applied labeling policy.</li>
-             
-          </p>
-          <p> 
-             <span>Complexity</span>
-             <li>30 classes</li>
-             <li>See Class Definitions for a list of all classes and have a look at the applied labeling policy.</li>
-             
+             <li>30 classes</li> 
           </p>
           <p> 
              <span>Diversity</span>
-             <li>50 cities</li>
+             <li>23 cities</li>
              <li>Several months (spring, summer, fall)</li>
              <li>Daytime</li>
              <li>Good/medium weather conditions</li>
@@ -172,8 +164,8 @@
                  </li>
              </li>
              <li>Volume
-                 <li style="margin-left: 20px;">5 000 annotated images with fine annotations (examples)</li>
-                 <li style="margin-left: 20px;">20 000 annotated images with coarse annotations (examples)</li>
+                 <li style="margin-left: 20px;">5000 annotated real-world images</li>
+                 <li style="margin-left: 20px;">9000 annotated synthetic images</li>
              </li>
              <li>Metadata
                  <li style="margin-left: 20px;">Preceding and trailing video frames. Each annotated image is the 20th image from a 30 frame video snippets (1.8s)</li>
@@ -215,8 +207,9 @@
                     <span class="anchor" id="data_annotation"></span>
                     <h3><b>Data Annotation</b></h3>
                     <p> 
-                    Labeled foreground objects must never have holes, i.e. if there is some background visible ‘through’ some foreground object, it is considered to be part of the foreground. This also applies to regions that are highly mixed with two or more classes: they are labeled with the foreground class. Examples: tree leaves in front of house or sky (everything tree), transparent car windows (everything car). 
+                        Below are examples of high quality dense pixel annotations of 5000 real-world images. Overlayed colors encode semantic classes. Note that single instances of traffic participants are annotated individually.
                     </p>
+                    <img src="assets/img/fine.png" style="width: 100%">
                 </div>                 
             </section>
             <!-- End Services Section -->             

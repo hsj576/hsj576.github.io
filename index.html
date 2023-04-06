@@ -100,7 +100,7 @@
                 <div class="carousel-item"> 
                     <div class="carousel-container"> 
                         <h2 class="animate__animated animate__fadeInDown">The Semantic-Segmentation Dataset for Lifelong Learning</h2>
-                        <p class="animate__animated animate__fadeInUp">12000 images with high quality annotations · 20000 images with coarse annotations · 50 different cities
+                        <p class="animate__animated animate__fadeInUp">14000 images with high quality annotations
                         </p>
                     </div>                     
                 </div>                 
@@ -129,20 +129,18 @@
                     <div class="row aos-init aos-animate" data-aos="fade-up"></div>                     
                     <h3><b>Overview</b></h3>
                     <p> 
-                    We present <b>Semantic-Segmentation</b>, a new large-scale dataset that contains a diverse set of stereo video sequences recorded in 
-                    street scenes from 50 different cities, with high quality pixel-level annotations of 5000 frames 
-                    in addition to a larger set of 20000 weakly annotated frames. 
-                    The dataset is thus an order of magnitude larger than similar previous attempts. 
-                    Details on annotated classes and examples of our annotations are available at this webpage.
+                    We present <b>Semantic-Segmentation</b>, a new test benchmark dataset for lifelong learning. 
+                    The Semantic-Segmentation dataset contains 5000 annotated real-world images from <a href="https://www.cityscapes-dataset.com/" target="_blank">Cityscapes</a> dataset
+                    and 9000 annotated synthetic images from <a href="https://synthia-dataset.net/" target="_blank">Synthia</a> dataset.
                     </p>
                     <p>
                     The Semantic-Segmentation Dataset is intended for
                     </p>
                     <p>
-                    (1) assessing the performance of vision algorithms for major tasks of semantic urban scene understanding: pixel-level, instance-level, and panoptic semantic labeling;
+                    (1) assessing the performance of vision algorithms for major tasks of semantic urban scene understanding for lifelong learning;
                     </p>
                     <p>
-                    (2) supporting research that aims to exploit large volumes of (weakly) annotated data, e.g. for training deep neural networks.
+                    (2) supporting research that aims to exploit large volumes of annotated data for lifelong learning.
                     </p>
                     
                     <h3><b>Introduction for <strong>LifeLong Learning Alogrithm</strong></b></h3>
@@ -187,18 +185,38 @@
                           <img src="assets/img/example-3.png" class="img-fluid" alt="">
                         </div>
                         <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+                            <img src="assets/img/example-4.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
                             <img src="assets/img/example-5.png" class="img-fluid" alt="">
                           </div>
                           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
                             <img src="assets/img/example-6.png" class="img-fluid" alt="">
-                          </div>
-                          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-                            <img src="assets/img/example-7.png" class="img-fluid" alt="">
                       </div>
                     
                     <div class="col-md-7 order-2 order-md-1 pt-5"> 
                     </div>
-                                  
+                    <h3><b>Citation</b></h3>
+<pre style="text-align: left; white-space: pre; display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);"> 
+@InProceedings{Cordts_2016_CVPR,
+    author = {Cordts, Marius and Omran, Mohamed and Ramos, Sebastian and Rehfeld, Timo and Enzweiler, Markus and Benenson, Rodrigo and Franke, Uwe and Roth, Stefan and Schiele, Bernt},
+    title = {The Cityscapes Dataset for Semantic Urban Scene Understanding},
+    booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month = {June},
+    year = {2016}
+}
+@InProceedings{Ros_2016_CVPR,
+    author = {Ros, German and Sellart, Laura and Materzynska, Joanna and Vazquez, David and Lopez, Antonio M.},
+    title = {The SYNTHIA Dataset: A Large Collection of Synthetic Images for Semantic Segmentation of Urban Scenes},
+    booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month = {June},
+    year = {2016}
+}                   
+</pre>
+</div>
+    <!-- <h3><b>Citation</b></h3>
+    <pre style="text-align: left; white-space: pre; display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);"> TBD </pre> -->
+</div> 
             </section>
             <!-- End Features Section -->             
         </main>
