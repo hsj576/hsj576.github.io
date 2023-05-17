@@ -3,7 +3,7 @@
     <head> 
         <meta charset="utf-8"> 
         <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
-        <title>Semantic-Segmentation-Documentation</title>         
+        <title>Cloud-Robotics-Documentation</title>         
         <meta content="" name="description"> 
         <meta content="" name="keywords"> 
         <!-- Favicons -->         
@@ -33,7 +33,7 @@
         <header id="header" class="fixed-top d-flex align-items-center"> 
             <div class="container d-flex justify-content-between align-items-center"> 
                 <div class="logo"> 
-                    <h1 class="text-light"><a href="index.html"><span>Semantic-Segmentation</span></a></h1> 
+                    <h1 class="text-light"><a href="index.html"><span>Cloud-Robotics</span></a></h1> 
                     <!-- Uncomment below if you prefer to use an image logo -->                     
                     <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->                     
                 </div>                 
@@ -74,8 +74,16 @@
                             <a href="benchmark.html"><span>Benchmark</span> <i class="bi bi-chevron-down"></i></a> 
                             <ul> 
                                 <li>
-                                    <a href="benchmark.html#benchmark">Semantic-Segmentation Benchmark</a>
+                                    <a href="benchmark.html#benchmark">Cloud-Robotics Benchmark</a>
                                 </li>                                
+                            </ul>                             
+                        </li>
+                        <li class="dropdown">
+                            <a href="challenge.html"><span>Challenge</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul> 
+                                <li>
+                                    <a href="challenge.html#challenge">Challenge</a>
+                                </li>                                 
                             </ul>                             
                         </li>                                                               
                     </ul>                     
@@ -93,7 +101,7 @@
                 <div class="container">
                     <span class="anchor" id="dataset_partition_description"></span>
                     <h3><b>Dataset Partition Description</b></h3>
-                    <p> Semanti-segmentation dataset has 8 groups of 30 classes. The partition of dataset is as follow: 
+                    <p> Cloud-Robotics dataset has 7 groups of 30 classes. The partition of dataset is as follow: 
                     </p>
                     
                     <table>
@@ -103,7 +111,7 @@
                         </tr>
                         <tr>
                           <td>flat</td>
-                          <td>road · sidewalk · parking · rail track</td>
+                          <td>road · sidewalk · ramp · runway</td>
                         </tr>
                          <tr>
                           <td>human</td>
@@ -112,15 +120,15 @@
                           </tr>
                         <tr>
                            <td>vehicle</td>
-                          <td>car · truck · bus · on rails · motorcycle · bicycle · caravan · trailer</td>
+                          <td>car · truck · bus · train · motorcycle · bicycle</td>
                          </tr>
                          <tr>
                             <td>construction</td>
-                           <td>building · wall · fence · guard rail · bridge · tunnel</td>
+                           <td>building · wall · fence · stair · curb · flowerbed · door</td>
                           </tr>
                           <tr>
                             <td>object</td>
-                           <td>	pole · pole group · traffic sign · traffic light</td>
+                           <td>	pole · traffic sign · traffic light · CCTV camera · Manhole · hydrant · belt · dustbin</td>
                           </tr>
                           <tr>
                             <td>nature</td>
@@ -129,10 +137,6 @@
                           <tr>
                             <td>sky</td>
                            <td>sky</td>
-                          </tr>
-                          <tr>
-                            <td>void</td>
-                           <td>ground · dynamic · static</td>
                           </tr>
                      </table>
 
@@ -152,10 +156,7 @@
           </p>
           <p> 
              <span>Diversity</span>
-             <li>23 cities</li>
-             <li>Several months (spring, summer, fall)</li>
              <li>Daytime</li>
-             <li>Good/medium weather conditions</li>
              <li>
                  Manually selected frames
                  <li style="margin-left: 20px;">Large number of dynamic objects</li>
@@ -164,26 +165,10 @@
                  </li>
              </li>
              <li>Volume
-                 <li style="margin-left: 20px;">5000 annotated real-world images</li>
-                 <li style="margin-left: 20px;">9000 annotated synthetic images</li>
-             </li>
-             <li>Metadata
-                 <li style="margin-left: 20px;">Preceding and trailing video frames. Each annotated image is the 20th image from a 30 frame video snippets (1.8s)</li>
-                 <li style="margin-left: 20px;">Corresponding right stereo views</li>
-                 <li style="margin-left: 20px;">GPS coordinates</li>
-                 <li style="margin-left: 20px;">Ego-motion data from vehicle odometry</li>
-                 <li style="margin-left: 20px;">Outside temperature from vehicle sensor</li>
-      
-             </li>
-         
-             <li>Extensions by other researchers
-                 <li style="margin-left: 20px;">Bounding box annotations of people</li>
-                 <li style="margin-left: 20px;">Images augmented with fog and rain</li>  
+                 <li style="margin-left: 20px;">2500 annotated real-world images</li>
              </li>
              <li>Benchmark suite and evaluation server
-                 <li style="margin-left: 20px;">Pixel-level semantic labeling</li>
-                 <li style="margin-left: 20px;">Instance-level semantic labeling</li>
-                 <li style="margin-left: 20px;">Panoptic semantic labeling</li>            
+                 <li style="margin-left: 20px;">Pixel-level semantic labeling</li>           
              </li>
           </p>
 
@@ -207,7 +192,7 @@
                     <span class="anchor" id="data_annotation"></span>
                     <h3><b>Data Annotation</b></h3>
                     <p> 
-                        Below are examples of high quality dense pixel annotations of 5000 real-world images. Overlayed colors encode semantic classes. Note that single instances of traffic participants are annotated individually.
+                        Below are examples of high quality dense pixel annotations of 2500 real-world images. Overlayed colors encode semantic classes. Note that single instances of traffic participants are annotated individually.
                     </p>
                     <img src="assets/img/fine.png" style="width: 100%">
                 </div>                 

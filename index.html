@@ -3,7 +3,7 @@
     <head> 
         <meta charset="utf-8"> 
         <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
-        <title>Semantic-Segmentation</title>
+        <title>Cloud-Robotics</title>
         <meta content="" name="description"> 
         <meta content="" name="keywords"> 
         <!-- Favicons -->         
@@ -33,7 +33,7 @@
         <header id="header" class="fixed-top d-flex align-items-center header-transparent"> 
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="logo"> 
-                    <h1 class="text-light"><a href="index.html"><span>Semantic-Segmentation</span></a></h1>
+                    <h1 class="text-light"><a href="index.html"><span>Cloud-Robotics</span></a></h1>
                     <!-- Uncomment below if you prefer to use an image logo -->                     
                     <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->                     
                 </div>                 
@@ -74,7 +74,15 @@
                             <a href="benchmark.html"><span>Benchmark</span> <i class="bi bi-chevron-down"></i></a> 
                             <ul> 
                                 <li>
-                                    <a href="benchmark.html#benchmark">Semantic-Segmentation Benchmark</a>
+                                    <a href="benchmark.html#benchmark">Cloud-Robotics Benchmark</a>
+                                </li>                                 
+                            </ul>                             
+                        </li>
+                        <li class="dropdown">
+                            <a href="challenge.html"><span>Challenge</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul> 
+                                <li>
+                                    <a href="challenge.html#challenge">Challenge</a>
                                 </li>                                 
                             </ul>                             
                         </li>                                                  
@@ -91,25 +99,25 @@
                 <!-- Slide 1 -->                 
                 <div class="carousel-item active"> 
                     <div class="carousel-container"> 
-                        <h2 class="animate__animated animate__fadeInDown">The Semantic-Segmentation Dataset for Lifelong Learning</h2>
-                        <p class="animate__animated animate__fadeInUp">Benchmark suite and evaluation server for pixel-level, instance-level, and panoptic semantic labeling in LifeLong Learning
+                        <h2 class="animate__animated animate__fadeInDown">The Cloud-Robotics Dataset for Lifelong Learning</h2>
+                        <p class="animate__animated animate__fadeInUp">Benchmark suite and evaluation server for pixel-level semantic labeling in LifeLong Learning
                         </p>
                     </div>                     
                 </div>                 
                 <!-- Slide 2 -->                 
                 <div class="carousel-item"> 
                     <div class="carousel-container"> 
-                        <h2 class="animate__animated animate__fadeInDown">The Semantic-Segmentation Dataset for Lifelong Learning</h2>
-                        <p class="animate__animated animate__fadeInUp">14000 images with high quality annotations
+                        <h2 class="animate__animated animate__fadeInDown">The Cloud-Robotics Dataset for Lifelong Learning</h2>
+                        <p class="animate__animated animate__fadeInUp">2500 images with high quality annotations
                         </p>
                     </div>                     
                 </div>                 
                 <!-- Slide 3 -->                 
                 <div class="carousel-item"> 
                     <div class="carousel-container"> 
-                        <h2 class="animate__animated animate__fadeInDown">The Semantic-Segmentation Dataset for Lifelong Learning</h2>
+                        <h2 class="animate__animated animate__fadeInDown">The Cloud-Robotics Dataset for Lifelong Learning</h2>
                         <p class="animate__animated animate__fadeInUp">
-                            Semantic, instance-wise, dense pixel annotations of 30 classes
+                            Semantic dense pixel annotations of 30 classes
                         </p>
                     </div>                     
                 </div>                 
@@ -129,15 +137,14 @@
                     <div class="row aos-init aos-animate" data-aos="fade-up"></div>                     
                     <h3><b>Overview</b></h3>
                     <p> 
-                    We present <b>Semantic-Segmentation</b>, a new test benchmark dataset for lifelong learning. 
-                    The Semantic-Segmentation dataset contains 5000 annotated real-world images from <a href="https://www.cityscapes-dataset.com/" target="_blank">Cityscapes</a> dataset
-                    and 9000 annotated synthetic images from <a href="https://synthia-dataset.net/" target="_blank">Synthia</a> dataset.
+                    We present <b>Cloud-Robotics</b>, a new test benchmark dataset for lifelong learning. 
+                    The Cloud-Robotics dataset contains 2500 annotated real-world images.
                     </p>
                     <p>
-                    The Semantic-Segmentation Dataset is intended for
+                    The Cloud-Robotics Dataset is intended for
                     </p>
                     <p>
-                    (1) assessing the performance of vision algorithms for major tasks of semantic urban scene understanding for lifelong learning;
+                    (1) assessing the performance of vision algorithms for major tasks of semantic robotic scene understanding for lifelong learning;
                     </p>
                     <p>
                     (2) supporting research that aims to exploit large volumes of annotated data for lifelong learning.
@@ -172,7 +179,7 @@
 
                     <h3><b>Examples</b></h3>
                     <p class="fst-italic">
-                    Some examples in Semantic-Segmentation dataset
+                    Some examples in Cloud-Robotics dataset
                     </p>
                     <div class="row">
                         <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
@@ -187,31 +194,15 @@
                         <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
                             <img src="assets/img/example-4.png" class="img-fluid" alt="">
                           </div>
-                          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-                            <img src="assets/img/example-5.png" class="img-fluid" alt="">
-                          </div>
-                          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-                            <img src="assets/img/example-6.png" class="img-fluid" alt="">
-                      </div>
                     
                     <div class="col-md-7 order-2 order-md-1 pt-5"> 
                     </div>
                     <h3><b>Citation</b></h3>
 <pre style="text-align: left; white-space: pre; display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);"> 
-@InProceedings{Cordts_2016_CVPR,
-    author = {Cordts, Marius and Omran, Mohamed and Ramos, Sebastian and Rehfeld, Timo and Enzweiler, Markus and Benenson, Rodrigo and Franke, Uwe and Roth, Stefan and Schiele, Bernt},
-    title = {The Cityscapes Dataset for Semantic Urban Scene Understanding},
-    booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month = {June},
-    year = {2016}
-}
-@InProceedings{Ros_2016_CVPR,
-    author = {Ros, German and Sellart, Laura and Materzynska, Joanna and Vazquez, David and Lopez, Antonio M.},
-    title = {The SYNTHIA Dataset: A Large Collection of Synthetic Images for Semantic Segmentation of Urban Scenes},
-    booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month = {June},
-    year = {2016}
-}                   
+    @online{Cloud-Robotics,
+        title={Cloud Robotics: a Robotic Semantic Segmentation Benchmark for Lifelong Learning},
+        url={https://hsj576.github.io/}
+    }                   
 </pre>
 </div>
     <!-- <h3><b>Citation</b></h3>
