@@ -122,18 +122,19 @@
     <tr>
         <td width="60" rowspan=2 align="center" valign=middle bgcolor="#FDEADA"><font face="Arial Unicode MS" color="#000000">Algorithm</font></td>
         <td width="60" rowspan=2 align="center" valign=middle bgcolor="#DCE6F2"><font face="Arial Unicode MS" color="#000000">Acurracy</font></td>
-        <td colspan=5 align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">Paradigm</font></td>
-        <td colspan=2 align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">Args</font></td>
+        <td colspan=4 align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">Paradigm</font></td>
+        <td colspan=4 align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">Args</font></td>
         <td colspan=2 align="center" valign=middle bgcolor="#E6E0EC"><font face="Arial Unicode MS" color="#000000">Code</font></td>
     </tr>
     <tr>
-        <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">samples_transfer_ratio</font></td>
         <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">paradigm</font></td>
         <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">basemodel</font></td>
         <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">task_definition</font></td>
         <td align="center" valign=middle bgcolor="#F2DCDB"><font face="Arial Unicode MS" color="#000000">task_allocation </font></td>
         <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">basemodel-learning_rate</font></td>
         <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">incremental-rounds</font></td>
+        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">training-epochs</font></td>
+        <td align="center" valign=middle bgcolor="#EBF1DE"><font face="Arial Unicode MS" color="#000000">pretrain model</font></td>
         <td align="center" valign=middle bgcolor="#E6E0EC"><font face="Arial Unicode MS" color="#000000">test tool</font></td>
         <td align="center" valign=middle bgcolor="#E6E0EC"><font face="Arial Unicode MS" color="#000000">code</font></td>
         </tr>
@@ -142,16 +143,92 @@
 
     <tr>
         <td align="center" valign=middle><font face="Arial Unicode MS" color="#000000">rfnet_lifelong_learning</font></td>
-        <td rowspan=6 align="center" valign=middle><font face="Arial Unicode MS" color="#000000"><b>0.3009</b></font></td>
-        <td align="center" valign=middle sdval="9.6" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.4807</font></td>
+        <td align="center" valign=middle><font face="Arial Unicode MS" color="#000000"><b>0.5206</b></font></td>
         <td align="center" valign=middle sdval="21.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">lifelonglearning</font></td>
-        <td align="center" valign=middle sdval="7.0" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">BaseModel</font></td>
-        <td align="center" valign=middle sdval="0.2" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">TaskDefinitionByOrigin</font></td>
-        <td align="center" valign=middle sdval="3.0" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">TaskAllocationByOrigin</font></td>
+        <td align="center" valign=middle sdval="7.0" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">BaseModel </font></td>
+        <td align="center" valign=middle sdval="0.2" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">TaskDefinitionByOrigin </font></td>
+        <td align="center" valign=middle sdval="3.0" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">TaskAllocationByOrigin </font></td>
         <td align="center" valign=middle sdval="29.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.0001 </font></td>
         <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">5</font></td>
-        <td align="center" valign=middle sdval="24.5" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">ianvs</font></td>
-        <td align="center" valign=middle sdval="4.7" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000"><a href="https://github.com/hsj576/ianvs/tree/feature-lifelong-semantic_segmentation/examples/semantic_segmentation/lifelong_learning_bench" target="_blank">code</a></font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">10</font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">resnet17</font></td>
+        <td align="center" valign=middle sdval="24.5" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">kubeedge/ianvs</font></td>
+        <td align="center" valign=middle sdval="4.7" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000"><a href="https://github.com/hsj576/ianvs/tree/cloud-robotics/examples/robot/lifelong_learning_bench" target="_blank">code</a></font></td>
+    </tr>
+
+    <tr>
+        <td align="center" valign=middle><font face="Arial Unicode MS" color="#000000">rfnet_lifelong_learning</font></td>
+        <td align="center" valign=middle><font face="Arial Unicode MS" color="#000000"><b>0.5100</b></font></td>
+        <td align="center" valign=middle sdval="21.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">lifelonglearning</font></td>
+        <td align="center" valign=middle sdval="7.0" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">BaseModel </font></td>
+        <td align="center" valign=middle sdval="0.2" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">TaskDefinitionByOrigin </font></td>
+        <td align="center" valign=middle sdval="3.0" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">TaskAllocationByOrigin </font></td>
+        <td align="center" valign=middle sdval="29.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.0001 </font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">10</font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">10</font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">resnet17</font></td>
+        <td align="center" valign=middle sdval="24.5" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">kubeedge/ianvs</font></td>
+        <td align="center" valign=middle sdval="4.7" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000"><a href="https://github.com/hsj576/ianvs/tree/cloud-robotics/examples/robot/lifelong_learning_bench" target="_blank">code</a></font></td>
+    </tr>
+
+    <tr>
+        <td align="center" valign=middle><font face="Arial Unicode MS" color="#000000">rfnet_lifelong_learning</font></td>
+        <td align="center" valign=middle><font face="Arial Unicode MS" color="#000000"><b>0.5091</b></font></td>
+        <td align="center" valign=middle sdval="21.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">lifelonglearning</font></td>
+        <td align="center" valign=middle sdval="7.0" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">BaseModel </font></td>
+        <td align="center" valign=middle sdval="0.2" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">TaskDefinitionByOrigin </font></td>
+        <td align="center" valign=middle sdval="3.0" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">TaskAllocationByOrigin </font></td>
+        <td align="center" valign=middle sdval="29.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.0001 </font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">15</font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">10</font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">resnet17</font></td>
+        <td align="center" valign=middle sdval="24.5" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">kubeedge/ianvs</font></td>
+        <td align="center" valign=middle sdval="4.7" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000"><a href="https://github.com/hsj576/ianvs/tree/cloud-robotics/examples/robot/lifelong_learning_bench" target="_blank">code</a></font></td>
+    </tr>
+
+    <tr>
+        <td align="center" valign=middle><font face="Arial Unicode MS" color="#000000">rfnet_lifelong_learning</font></td>
+        <td align="center" valign=middle><font face="Arial Unicode MS" color="#000000"><b>0.2991</b></font></td>
+        <td align="center" valign=middle sdval="21.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">lifelonglearning</font></td>
+        <td align="center" valign=middle sdval="7.0" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">BaseModel </font></td>
+        <td align="center" valign=middle sdval="0.2" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">TaskDefinitionByOrigin </font></td>
+        <td align="center" valign=middle sdval="3.0" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">TaskAllocationByOrigin </font></td>
+        <td align="center" valign=middle sdval="29.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.0001 </font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">5</font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">1</font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">resnet17</font></td>
+        <td align="center" valign=middle sdval="24.5" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">kubeedge/ianvs</font></td>
+        <td align="center" valign=middle sdval="4.7" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000"><a href="https://github.com/hsj576/ianvs/tree/cloud-robotics/examples/robot/lifelong_learning_bench" target="_blank">code</a></font></td>
+    </tr>
+
+    <tr>
+        <td align="center" valign=middle><font face="Arial Unicode MS" color="#000000">rfnet_lifelong_learning</font></td>
+        <td align="center" valign=middle><font face="Arial Unicode MS" color="#000000"><b>0.2846</b></font></td>
+        <td align="center" valign=middle sdval="21.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">lifelonglearning</font></td>
+        <td align="center" valign=middle sdval="7.0" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">BaseModel </font></td>
+        <td align="center" valign=middle sdval="0.2" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">TaskDefinitionByOrigin </font></td>
+        <td align="center" valign=middle sdval="3.0" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">TaskAllocationByOrigin </font></td>
+        <td align="center" valign=middle sdval="29.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.0001 </font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">10</font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">1</font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">resnet17</font></td>
+        <td align="center" valign=middle sdval="24.5" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">kubeedge/ianvs</font></td>
+        <td align="center" valign=middle sdval="4.7" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000"><a href="https://github.com/hsj576/ianvs/tree/cloud-robotics/examples/robot/lifelong_learning_bench" target="_blank">code</a></font></td>
+    </tr>
+
+    <tr>
+        <td align="center" valign=middle><font face="Arial Unicode MS" color="#000000">rfnet_lifelong_learning</font></td>
+        <td align="center" valign=middle><font face="Arial Unicode MS" color="#000000"><b>0.2635</b></font></td>
+        <td align="center" valign=middle sdval="21.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">lifelonglearning</font></td>
+        <td align="center" valign=middle sdval="7.0" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">BaseModel </font></td>
+        <td align="center" valign=middle sdval="0.2" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">TaskDefinitionByOrigin </font></td>
+        <td align="center" valign=middle sdval="3.0" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">TaskAllocationByOrigin </font></td>
+        <td align="center" valign=middle sdval="29.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">0.0001 </font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">15</font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">1</font></td>
+        <td align="center" valign=middle sdval="59.8" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">resnet17</font></td>
+        <td align="center" valign=middle sdval="24.5" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000">kubeedge/ianvs</font></td>
+        <td align="center" valign=middle sdval="4.7" sdnum="1033;0;0.00"><font face="Arial Unicode MS" color="#000000"><a href="https://github.com/hsj576/ianvs/tree/cloud-robotics/examples/robot/lifelong_learning_bench" target="_blank">code</a></font></td>
     </tr>
 
 
