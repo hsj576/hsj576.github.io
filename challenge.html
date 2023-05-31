@@ -107,15 +107,16 @@
                     </p>
 
                     <h4><b>Background</b></h4>
-                    <p> By 2023, the global market size for edge intelligence is projected to reach $3.093 billion, with a CAGR of 28.8%. However, the real value lies in the diverse array of industries that edge intelligence can revolutionize, including transportation, industry, energy, aerospace, media, agriculture, and beyond. Despite this potential, there are still challenges hindering the scalability of edge intelligence, such as the difficulties posed by small sample sizes and heterogeneous data at the edge. Additionally, customers of edge intelligence demand both data security compliance and offline autonomy.
+                    <p> According to a market report, the global edge intelligence market is expected to reach US$3.093 billion by 2023, with a compound annual growth rate (CAGR) of 28.8%. Edge intelligence has potential applications in various industries, such as transportation, industry, energy, aerospace, media, and farming. However, one of the main challenges for monetizing its business value is to achieve large-scale replication.
+                        The current obstacles to replicating edge intelligence include small and heterogeneous data sets on edges (see figures below), as well as the users’ requirements for data security and offline autonomy of edge intelligence services.
                     </p>
 
                     <h4><b>Technical Challenges</b></h4>
-                    <p><li> Catastrophic forgetting: The use of a single-task approach to build a model for edge inference in the cloud, such as isolated learning, single-task incremental learning, and single-task federated learning, can lead to catastrophic forgetting when updating the model, resulting in the difficulty of achieving personalized services for each user.
+                    <p><li> Catastrophic forgetting: Single-task methods, such as isolated learning, single-task incremental learning, and single-task federated learning, build a monolithic model in the cloud for inference on edges. However, these methods suffer from catastrophic forgetting [2], which means that the historical model is overwritten by the updated model and loses its previous knowledge. Moreover, it is challenging to use different models to solve different problems with these methods.
                     </li>
-                    <li> AI engineering and automation: The use of a multi-task approach, such as multi-task learning, multi-task incremental learning, and multi-task federated learning, by defining multiple models manually to adapt to different edge nodes, requires significant investment in resources and manpower for the construction and maintenance of multiple customized models, indicating a long way to go for AI engineering and automation.
+                    <li> AI engineering and automation: Multi-task methods, such as multi-task learning, multi-task incremental learning, and multi-task federated learning, manually define multiple models to adapt to different edges. However, these methods require considerable human and computational resources for building and maintaining such models. AI engineering and automation are still far from mature.
                     </li>
-                    <li> Unknown task recognition and processing: The complex and diverse edge environment often does not conform to the closed hypothesis that all tasks learned perfectly during the training phase will be present during the inference phase. It is essential to assume the existence of unknown tasks during the operation of edge models, and to update the models promptly to ensure the robustness and reliability of related services.
+                    <li> Identification and processing of unknown tasks: Edge environments are complex and diverse, and the closed-world assumption —that all tasks in the inference stage are perfectly learned in the training stage —does not hold in edge scenarios. Therefore, it is necessary to assume that unknown tasks may exist during the running of edge models and to verify and update them in a timely manner to ensure the robustness and reliability of related services.
                     </li>
                     </p>
 
@@ -123,21 +124,21 @@
                     <p>
                     We conducted research on the core technologies and system optimization of edge-cloud collaborative lifelong learning based on the Sedna and Ianvs frameworks, achieving multi-model full lifecycle management.
                     System Goals and Core Technologies:
-                    <li> Maximize the unknown task generalization indicator (FWT) while maintaining a forgetting resistance indicator (BWT) of no less than 95%.
+                    <li> Maximize the unknown task generalization metric(FWT), and the anti-forgetting metric(BWT) must reach 95%
                     </li>
-                    <li> Shorten the development time for new scenarios to within two weeks, ensuring that data does not leave the edge and that services operate autonomously offline.
+                    <li> The development time of new scenarios must be less than two weeks. Data cannot be transferred out of the edges, and offline autonomy of services must be implemented.
                     </li>
-                    <li> Decoupling of models, enabling plug-and-play models in complex and changing edge scenarios.
+                    <li> Models must be decoupled so that models are pluggable in complex and changeable edge scenarios.
                     </li>
-                    <li> Automatic task definition and allocation: Divide latent tasks in a given dataset and match inference samples to the most similar task. The task matching accuracy indicator reaches 95%.
+                    <li> Partition latent tasks in a given dataset, and match highest-similarity tasks for inference samples. The task matching accuracy must reach 95%.
                     </li>
-                    <li> Unknown task recognition: Distinguish unknown and known tasks during inference, with an accuracy indicator of 99%.
+                    <li> Unknown and known tasks are distinguished in inference. The identification accuracy of unknown tasks must reach 99%.
                     </li>
-                    <li> Unknown task processing: Utilize multi-source data and model optimization knowledge bases, such as mechanistic models, task migration discovery, simulation data, and large models in the cloud, to achieve forgetting resistance (BWT), generalization (FWT), and other indicators of 95%.
+                    <li> Optimize models in the knowledge base with the help of data and models from different resources, such as mechanism models, task (transfer) relation discovery, simulation data, and large-scale pre-trained models. The anti-forgetting (BWT) and generalization (FWT) metrics must reach 95%.
                     </li>
                     </p>
 
-                    <p>We offer Cloud-Robotics, a real-world lifelong learning dataset for semantic segmentation in robotics. Please contact Dr. X (x@huawei.com) for more details. 
+                    <p>We offer Cloud-Robotics, a real-world lifelong learning dataset for semantic segmentation in robotics. Please contact Dr. Zheng Zimu(zimu.zheng@huawei.com) for more details. 
                     </p>
                     <div class="col-md-7 order-2 order-md-1 pt-5"> 
                     </div>
