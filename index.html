@@ -43,19 +43,10 @@
                             <a class="active" href="index.html">Home</a>
                         </li>                         
                         <li class="dropdown">
-                            <a href="documentation.html"><span>Documentation</span> <i class="bi bi-chevron-down"></i></a>
+                            <a href="documentation-ss.html"><span>Documentation</span> <i class="bi bi-chevron-down"></i></a>
                             <ul> 
                                 <li>
-                                    <a href="documentation.html#dataset_partition_description">Dataset Partition Description</a>
-                                </li>
-                                <li>
-                                    <a href="documentation.html#data_statistics">Data Statistics</a>
-                                </li>                                
-                                <li>
-                                    <a href="documentation.html#data_format">Data Format</a>
-                                </li>                                 
-                                <li>
-                                    <a href="documentation.html#data_annotation">Data Annotation</a>
+                                    <a href="documentation-ss.html">Semantic Segmentation</a>
                                 </li>
                             </ul>                             
                         </li>                         
@@ -110,25 +101,25 @@
                 <!-- Slide 1 -->                 
                 <div class="carousel-item active"> 
                     <div class="carousel-container"> 
-                        <h2 class="animate__animated animate__fadeInDown">The Cloud-Robotics Dataset for Lifelong Learning</h2>
-                        <p class="animate__animated animate__fadeInUp">Benchmark suite and evaluation server for pixel-level semantic labeling in LifeLong Learning
+                        <h2 class="animate__animated animate__fadeInDown">The Cloud-Robotics Dataset</h2>
+                        <p class="animate__animated animate__fadeInUp">Multi scenario: targeting a rich and limited open environment, adapting to mainstream robotic applications such as delivery, inspection, etc. 
                         </p>
                     </div>                     
                 </div>                 
                 <!-- Slide 2 -->                 
                 <div class="carousel-item"> 
                     <div class="carousel-container"> 
-                        <h2 class="animate__animated animate__fadeInDown">The Cloud-Robotics Dataset for Lifelong Learning</h2>
-                        <p class="animate__animated animate__fadeInUp">2500 images with high quality annotations
+                        <h2 class="animate__animated animate__fadeInDown">The Cloud-Robotics Dataset</h2>
+                        <p class="animate__animated animate__fadeInUp">In order to provide rich and high-precision multimodal data for robotic applications and algorithm research in closed environments, build community influence, and absorb more external resources for internal algorithm research.
                         </p>
                     </div>                     
                 </div>                 
                 <!-- Slide 3 -->                 
                 <div class="carousel-item"> 
                     <div class="carousel-container"> 
-                        <h2 class="animate__animated animate__fadeInDown">The Cloud-Robotics Dataset for Lifelong Learning</h2>
+                        <h2 class="animate__animated animate__fadeInDown">The Cloud-Robotics Dataset</h2>
                         <p class="animate__animated animate__fadeInUp">
-                            Semantic dense pixel annotations of 30 classes
+                            Edge-Cloud Collaboration: A Robotic System Platform for Edge-Cloud Collaboration with supporting application development platforms and benchmark testing tools.
                         </p>
                     </div>                     
                 </div>                 
@@ -147,46 +138,17 @@
                 <div class="container">
                     <div class="row aos-init aos-animate" data-aos="fade-up"></div>                     
                     <h3><b>Overview</b></h3>
-                    <p> 
-                    We present <b>Cloud-Robotics</b>, a new test benchmark dataset for lifelong learning. 
-                    The Cloud-Robotics dataset contains 2500 annotated real-world images  collected in Shenzhen Industry Zone by robotic dogs.
-                    </p>
                     <p>
-                    The Cloud-Robotics Dataset is intended for
-                    </p>
-                    <p>
-                    (1) assessing the performance of vision algorithms for major tasks of semantic robotic scene understanding for lifelong learning in robotics;
-                    </p>
-                    <p>
-                    (2) supporting research that aims to exploit large volumes of annotated data for lifelong learning.
-                    </p>
-                    
-                    <h3><b>Introduction for <strong>LifeLong Learning Alogrithm</strong></b></h3>
-                    <p> 
-                    The current mainstream machine learning paradigm is to run machine learning algorithms on a given set of data to generate a model, and then apply this model to a task in a real environment, which we can call "isolated learning". The main problem with this learning paradigm is that the model does not retain and accumulate previously learned knowledge and cannot use it in future learning, and the learning environment is static and closed, in contrast to the human learning process. In reality, the situation is so varied that it is clearly impossible to label every possible task or to collect large amounts of data before training in order for a machine learning algorithm to learn. Lifelong machine learning was created to address these problems.
-                    </p>
-                    <p>
-                    Lifelong learning has five key characteristics.
+                        In the past few years, robotic technology has developed rapidly, and the practical application of intelligent robots such as the Cloud Shadow X20 has become increasingly widespread. For robotic applications, model training requires a large amount of data, and the ability of models to learn throughout their lifetime has become increasingly important due to the complex and ever-changing real environment. However, currently there are relatively few open-source datasets in the field of robotics, making it difficult for developers in the robotics field to obtain high-quality data for model training.
                     </p>
                     <p> 
-                    (1) a process of continuous learning.
+                        Therefore, we have jointly released the <b>Cloud-Robotics</b> dataset on KubeEdge-Ianvs to provide better support for robot learning. The Cloud-Robotics dataset not only provides high-quality data support for robotic tasks but also offers more possibilities for testing the lifelong learning ability of robot application models. We believe that this dataset will become one of the important tools in the field of robot learning and application development.
                     </p>
                     <p>
-                    (2) the accumulation and retention of knowledge in the knowledge base.
+                        Cloud-Robotics is a multimodal robot dataset collected by an intelligent robotic dog in the Huawei Shenzhen Industrial Park. Currently, the outdoor image semantic segmentation dataset of Cloud-Robotics has been open-sourced. In the future, we will open-source other modalities of Cloud-Robotics datasets, including but not limited to point clouds and IMU, etc.
                     </p>
-                    <p>
-                    (3) the ability to use accumulated learned knowledge to aid future learning
-                    </p>
-                    <p>
-                    (4) the ability to discover new tasks.
-                    </p>
-                    <p>
-                    (5) the ability to learn while working.
-                    </p>
-                    <p>
-                    Relying on the lifelong learning system built by KubeEdge+Sedna+Ianvs distributed collaborative AI joint inference framework, the core task of this project is to complete the unknown task identification algorithm module and embed it in the framework, with the aim of equipping the system with the ability to discover new tasks.
-                    </p>
-                    <img src="assets/img/lifelonglearning.png" style="width: 100%">
+                    <img src="assets/img/3.png" alt="图片描述" width="1400" height="200">
+
 
                     <h3><b>Examples</b></h3>
                     <p class="fst-italic">
@@ -205,15 +167,21 @@
                         <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
                             <img src="assets/img/example-4.png" class="img-fluid" alt="">
                           </div>
-                    
+                    <h3><b>Annoucement</b></h3>
+                          <p> 
+                          - The Cloud-Robotics official website has been online! (2023/06/30)<br>
+                          - The Cloud-Robotics Semantic Segmentation dataset has been released! (2023/06/30)<br>
+                          </p>
                     <div class="col-md-7 order-2 order-md-1 pt-5"> 
                     </div>
                     <h3><b>Citation</b></h3>
 <pre style="text-align: left; white-space: pre; display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);"> 
     @online{Cloud-Robotics,
-        title={Cloud Robotics: a Robotic Semantic Segmentation Benchmark for Lifelong Learning},
+        title={Cloud Robotics},
+        author={Hu, Shijing and Mao, Sitong and Luo, Siqi and Huang, Zhiwei and Zheng, Zimu and Pu, Jie and Wang, Feng},
         url={https://hsj576.github.io/}
-    }                   
+        year={2023}
+    }                            
 </pre>
 </div>
     <!-- <h3><b>Citation</b></h3>
