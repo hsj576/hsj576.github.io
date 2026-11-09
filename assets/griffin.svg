@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-labelledby="title desc">
+  <title id="title">Token alignment — original motif, not official artwork</title>
+  <desc id="desc">An original motif, not official artwork. Two rows of abstract token blocks represent training and decoding. Fine lines bring irregular training positions into a regular decoding grid. A conceptual decoration, not a technical claim or experimental result.</desc>
+  <rect x="20" y="18" width="560" height="324" rx="24" fill="#F8FAFC"/>
+  <text x="46" y="51" fill="#566579" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing=".4">Token alignment</text>
+  <g fill="none" stroke="#C8D2DF" stroke-width="1.4" stroke-linecap="round">
+    <path d="M509 34v16m12-20v20m12-12v12M504 56h34"/>
+  </g>
+  <text x="46" y="124" fill="#7A8392" font-family="Arial, Helvetica, sans-serif" font-size="12">Training</text>
+  <text x="46" y="266" fill="#7A8392" font-family="Arial, Helvetica, sans-serif" font-size="12">Decoding</text>
+  <g fill="none" stroke="#E1E7EF" stroke-width="1" stroke-dasharray="3 6">
+    <path d="M152 91v202M234 91v202M316 91v202M398 91v202M480 91v202"/>
+  </g>
+  <path d="M127 293h378" fill="none" stroke="#D6DFE9" stroke-width="1.2"/>
+  <g fill="none" stroke-width="1.6" stroke-linecap="round">
+    <path d="M157 139C157 182 152 197 152 242" stroke="#BACADB"/>
+    <path d="M214 154C214 190 234 205 234 242" stroke="#ADBFD3"/>
+    <path d="M305 129C305 182 316 193 316 242" stroke="#9B86B8"/>
+    <path d="M381 149C381 187 398 204 398 242" stroke="#BACADB"/>
+    <path d="M487 134C487 180 480 200 480 242" stroke="#ADBFD3"/>
+  </g>
+  <g stroke-width="1">
+    <rect x="135" y="99" width="44" height="40" rx="8" fill="#E7EFF5" stroke="#CBD8E5"/>
+    <rect x="192" y="114" width="44" height="40" rx="8" fill="#E1EBF3" stroke="#C4D3E1"/>
+    <rect x="283" y="89" width="44" height="40" rx="8" fill="#EAE3F3" stroke="#CBBBDC"/>
+    <rect x="359" y="109" width="44" height="40" rx="8" fill="#E7EFF5" stroke="#CBD8E5"/>
+    <rect x="465" y="94" width="44" height="40" rx="8" fill="#E1EBF3" stroke="#C4D3E1"/>
+    <rect x="130" y="242" width="44" height="40" rx="8" fill="#E7EFF5" stroke="#CBD8E5"/>
+    <rect x="212" y="242" width="44" height="40" rx="8" fill="#E1EBF3" stroke="#C4D3E1"/>
+    <rect x="294" y="242" width="44" height="40" rx="8" fill="#EAE3F3" stroke="#CBBBDC"/>
+    <rect x="376" y="242" width="44" height="40" rx="8" fill="#E7EFF5" stroke="#CBD8E5"/>
+    <rect x="458" y="242" width="44" height="40" rx="8" fill="#E1EBF3" stroke="#C4D3E1"/>
+  </g>
+  <g fill="none" stroke="#8FA5BB" stroke-width="2" stroke-linecap="round">
+    <path d="M148 116h18m-18 6h11M205 131h18m-18 6h11M372 126h18m-18 6h11M478 111h18m-18 6h11"/>
+    <path d="M143 259h18m-18 6h11M225 259h18m-18 6h11M389 259h18m-18 6h11M471 259h18m-18 6h11"/>
+  </g>
+  <g fill="none" stroke="#8C73AB" stroke-width="2" stroke-linecap="round">
+    <path d="M296 106h18m-18 6h11M307 259h18m-18 6h11"/>
+  </g>
+  <g fill="#A9BACD">
+    <circle cx="152" cy="293" r="2.5"/>
+    <circle cx="234" cy="293" r="2.5"/>
+    <circle cx="398" cy="293" r="2.5"/>
+    <circle cx="480" cy="293" r="2.5"/>
+  </g>
+  <circle cx="316" cy="293" r="3" fill="#9B86B8"/>
+</svg>

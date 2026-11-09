@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-labelledby="title desc">
+  <title id="title">Draft tree — original motif, not official artwork</title>
+  <desc id="desc">An original motif, not official artwork. A conceptual three-layer draft tree with five leaf paths. Deep purple marks a target-accepted path; pale lavender marks alternatives. Decorative illustration only, not experimental results.</desc>
+  <rect x="20" y="18" width="560" height="324" rx="24" fill="#FAF9FD"/>
+  <text x="46" y="51" fill="#57516A" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing=".4">Draft tree</text>
+  <g fill="none" stroke="#D9D3E7" stroke-width="1.5" stroke-linecap="round">
+    <path d="M506 42h16l12 9"/>
+    <path d="m522 42 12-9"/>
+  </g>
+  <g fill="#D9D3E7">
+    <circle cx="506" cy="42" r="3"/>
+    <circle cx="534" cy="33" r="3"/>
+    <circle cx="534" cy="51" r="3"/>
+  </g>
+  <path d="M69 269H530" fill="none" stroke="#EEEAF4" stroke-width="1"/>
+  <g fill="none" stroke="#D1CADF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 87 176 163"/>
+    <path d="M300 87 411 163"/>
+    <path d="M176 163 96 245"/>
+    <path d="M176 163 185 245"/>
+    <path d="M176 163 274 245"/>
+    <path d="M411 163 397 245"/>
+    <path d="M411 163 493 245"/>
+  </g>
+  <path d="M300 87 176 163 185 245" fill="none" stroke="#66508D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#F1EEF7" stroke="#C8BFD9" stroke-width="1.5">
+    <circle cx="411" cy="163" r="9"/>
+    <circle cx="96" cy="245" r="7"/>
+    <circle cx="274" cy="245" r="7"/>
+    <circle cx="397" cy="245" r="7"/>
+    <circle cx="493" cy="245" r="7"/>
+  </g>
+  <circle cx="300" cy="87" r="17" fill="#EDE7F5"/>
+  <circle cx="300" cy="87" r="9" fill="#66508D"/>
+  <circle cx="176" cy="163" r="9" fill="#66508D"/>
+  <circle cx="185" cy="245" r="15" fill="#EDE7F5"/>
+  <circle cx="185" cy="245" r="8" fill="#66508D"/>
+  <path d="m181.5 245 2.5 2.5 4.5-5" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#B7AEC9">
+    <circle cx="96" cy="280" r="1.5"/>
+    <circle cx="274" cy="280" r="1.5"/>
+    <circle cx="397" cy="280" r="1.5"/>
+    <circle cx="493" cy="280" r="1.5"/>
+  </g>
+  <rect x="186" y="296" width="228" height="30" rx="15" fill="#EEE9F6"/>
+  <path d="M202 311h18" stroke="#66508D" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="220" cy="311" r="3" fill="#66508D"/>
+  <text x="233" y="315.5" fill="#66508D" font-family="Arial, Helvetica, sans-serif" font-size="12">Target verification</text>
+</svg>
