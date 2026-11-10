@@ -1,5 +1,9 @@
 {
-  "version": "v0.2",
+  "version": "v0.7",
+  "badgeSources": [
+    {"localFilename":"badge-kcd-shanghai-2024.webp","title":"Speaker - KCD Shanghai 2024","sourcePage":"https://app.lfx.dev/u/hsj576","badgeDefinition":"https://www.credly.com/org/the-linux-foundation/badge/speaker-kcd-shanghai-2024","downloadUrl":"https://images.credly.com/images/659b3a27-9b9d-4a19-8548-b686d3563c2b/image.png","checkedOn":"2026-11-10","issuer":"The Linux Foundation","rights":"Displayed in user's public LFX profile. Badge artwork and marks belong to respective rights holders; no open reuse license verified. Link is badge definition, not personal credential."},
+    {"localFilename":"badge-kcd-beijing-2025.webp","title":"Speaker - KCD Beijing 2025","sourcePage":"https://app.lfx.dev/u/hsj576","badgeDefinition":"https://www.credly.com/org/the-linux-foundation/badge/speaker-kcd-beijing-2025","downloadUrl":"https://images.credly.com/images/93512340-00c6-4f0f-804e-95c018ba8ca9/blob","checkedOn":"2026-11-10","issuer":"The Linux Foundation","rights":"Displayed in user's public LFX profile. Badge artwork and marks belong to respective rights holders; no open reuse license verified. Link is badge definition, not personal credential."}
+  ],
   "retrievedOn": "2026-11-09",
   "notice": "供本地个人主页原型展示；公开可见不代表开放授权。作品图版权与队徽商标归原权利人，正式发布前需确认适用条件。未对外发布。",
   "assets": [
@@ -86,6 +90,24 @@
       "sourceLabel": "本人于2026-11-09提供的复旦足球队合影",
       "caption": "本人为第二排左三；不推断照片年份或对应赛事",
       "processing": "保留1440×1080完整画面，不标记或裁切其他人；转WebP且不保留EXIF"
+    },
+    {
+      "localFilename": "yuanpei-football.webp",
+      "sourceLabel": "本人于2026-11-10提供的北京大学元培学院足球队合影",
+      "caption": "本人确认：第二排中间、穿12号球衣。不推断拍摄日期或对应赛事。",
+      "processing": "保留1620×1080完整画面，不裁切、不修脸、不标记其他人；转WebP且不保留EXIF。原始文件未修改。"
+    },
+    {
+      "localFilename": "tokyo-exchange.webp",
+      "sourceLabel": "本人于2026-11-10提供的东京大学交换照片",
+      "caption": "东京大学交换期间的校园照片。已确认交换期2019.03—2019.08，不推断具体拍摄日或活动名称。",
+      "processing": "保留1440×1080完整画面，转WebP且不保留EXIF。原始文件未修改。"
+    },
+    {
+      "localFilename": "magic-law-gala-2019.webp",
+      "sourceLabel": "本人于2026-11-10提供的魔术演出照片",
+      "caption": "2019年法学院新年晚会 · 北京大学百年讲堂；晚会名称和场地按本人说明，不从晚会名称推断具体拍摄日期。",
+      "processing": "保留2544×1600完整舞台画面；仅WebP转换及去除EXIF，不裁切、不修脸、不修改原始文件。"
     }
   ]
 }
